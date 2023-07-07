@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato");
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+:root {
+  --primary-color: rgb(13, 106, 134);
+  --color-lilais: blueviolet;
+  --white: #fff;
+  --dark-1: #5f7c8899;
+  --gray-dark: #929899;
+  --true: #51c95b;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Lato";
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.conteiner {
+  flex-wrap: wrap;
+  max-width: 640px;
+  margin: 50px auto;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 40px;
+  width: 50%;
+  padding: 0 20px;
+  border-radius: 7px;
+  border: 2px solid;
+}
+
+button {
+  border: none;
+  background: rgb(53, 167, 212);
+  color: var(--white);
+  font-size: small;
+  border-radius: 0.3rem;
+  padding: 0.9rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button i{
+  font-weight: bold;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+form input:focus {
+  outline: 1px solid rgb(185, 182, 215);
+}
+
+.form-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.conteiner-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .7rem;
+}
+
+.conteiner-numbers input:nth-child(3) {
+  display: flex;
+}
+
+.conteiner-numbers input {
+  width: 30%;
+}
+
+.lista-Itens {
+  max-width: 640px;
+  margin: 50px auto;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 10px;
+  background-image: url("../img/listaDeCompras.png");
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  gap: 0.7rem;
+  background-color: var(--gray-dark);
+  padding: 0.4rem;
+  margin: 0.7rem;
+  border-radius: 0.7rem;
+  transition: 0.3s;
+}
+
+.item h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 1rem;
+}
+
+h2 , h4{
+  border: 2px solid rgb(36, 109, 227);
+  background: rgb(36, 109, 227);
+  color: var(--white);
+  font-size: small;
+  border-radius: 0.3rem;
+  padding: 0.9rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.item-qtn{
+  background: rgb(21, 163, 239);
+  border: 2px solid rgb(21, 163, 239);
+}
+
+.hide {
+  display: none;
+}
+
+.pegou {
+  background-color: var(--true);
+}
