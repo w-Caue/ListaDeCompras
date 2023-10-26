@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,21 +8,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
-        <nav class="flex items-center flex-wrap bg-gray-800">
+<body class="">
+    <header class="">
+        <nav class="flex items-center flex-wrap bg-blue-700 dark:bg-gray-800">
             <div class="flex flex-1 justify-center md:items-stretch md:justify-start">
                 <div class="flex flex-shrink-0 items-center ">
-                    <img src="https://user-images.githubusercontent.com/123313244/275809062-7e30593d-8d63-4914-a7f0-076491403f35.png"
-                            class="h-14 mr-3" alt=" Logo" />
+                    <img src="https://user-images.githubusercontent.com/123313244/278417682-6fc6cfcb-b4f0-4596-8557-19d4063e1794.png" class="h-16 mr-3" alt=" Logo" />
                 </div>
             </div>
-            
 
             <div class="ml-auto md:hidden">
 
                 <button id="buttonNav" type="button"
-                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    class="relative inline-flex items-center justify-center rounded-md p-2 text-white dark:text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                     aria-controls="mobile-menu" aria-expanded="false">
                     <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                         aria-hidden="true">
@@ -36,47 +33,46 @@
 
             <div id="menuNav" class="hidden w-full flex-grow md:inline-flex md:w-auto">
                 <div class="flex flex-col md:inline-flex md:flex-row ">
-                    <a href="#" class="bg-gray-900 text-white rounded-md mx-2 px-3 py-2 text-sm font-medium"
+                    <a href="#" class="bg-blue-600 text-white rounded-md mx-2 px-3 py-2 text-sm font-medium dark:bg-gray-900"
                         aria-current="page">Home</a>
                     <a href="#catalogo"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md mx-2 px-3 py-2 text-sm font-medium">Catalogo</a>
+                        class="text-gray-300 hover:bg-blue-600 hover:text-white rounded-md mx-2 px-3 py-2 text-sm font-medium dark:hover:bg-gray-700">Catalogo</a>
                     <a href="#vendedores"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md mx-2 px-3 py-2 text-sm font-medium">Vendedores</a>
+                        class="text-gray-300 hover:bg-blue-600 hover:text-white rounded-md mx-2 px-3 py-2 text-sm font-medium dark:hover:bg-gray-700">Vendedores</a>
                     <a href="#footer"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md mx-2 px-3 py-2 text-sm font-medium">Sobre
+                        class="text-gray-300 hover:bg-blue-600 hover:text-white rounded-md mx-2 px-3 py-2 text-sm font-medium dark:hover:bg-gray-700">Sobre
                         Nós</a>
                 </div>
             </div>
         </nav>
 
     </header>
-    <section id="home" class="bg-gray-900">
+    <section id="home" class="bg-blue-600 dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
             <h1
                 class="mb-4 text-4xl text-white font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
-                Bem vindo a Bete Cunha</h1>
+                Bem vindo a Sua Loja</h1>
             <!-- <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Here at
                 Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and
                 drive economic growth.</p> -->
-            <div class="flex justify-center m-4">
-                <img src="https://user-images.githubusercontent.com/123313244/275809062-7e30593d-8d63-4914-a7f0-076491403f35.png"
-                            class="mr-3" alt=" Logo" />
+            <div class="flex justify-center">
+                <img src="https://user-images.githubusercontent.com/123313244/278418262-e9b34a29-accc-49b7-8c79-08fc791ecd42.png" class="mr-3 h-80" alt=" Logo" />
             </div>
             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                 <a href="#vendedores"
-                    class="inline-flex justify-center gap-2 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    class="inline-flex justify-center gap-2 items-center py-3 px-5 text-base font-medium text-center text-black bg-white rounded-lg hover:bg-gray-200 focus:ring-4 focus:ring-blue-300 dark:text-white dark:bg-blue-700 dark:hover:bg-blue-800 dark:focus:ring-blue-900">
                     Nossos Vendedores
 
                     <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"
-                        width="20" height="20" class="fill-white">
+                        width="20" height="20" class="dark:fill-white">
                         <path
                             d="M13,1a1,1,0,0,1,1-1A10.011,10.011,0,0,1,24,10a1,1,0,0,1-2,0,8.009,8.009,0,0,0-8-8A1,1,0,0,1,13,1Zm1,5a4,4,0,0,1,4,4,1,1,0,0,0,2,0,6.006,6.006,0,0,0-6-6,1,1,0,0,0,0,2Zm9.093,10.739a3.1,3.1,0,0,1,0,4.378l-.91,1.049c-8.19,7.841-28.12-12.084-20.4-20.3l1.15-1A3.081,3.081,0,0,1,7.26.906c.031.031,1.884,2.438,1.884,2.438a3.1,3.1,0,0,1-.007,4.282L7.979,9.082a12.781,12.781,0,0,0,6.931,6.945l1.465-1.165a3.1,3.1,0,0,1,4.281-.006S23.062,16.708,23.093,16.739Zm-1.376,1.454s-2.393-1.841-2.424-1.872a1.1,1.1,0,0,0-1.549,0c-.027.028-2.044,1.635-2.044,1.635a1,1,0,0,1-.979.152A15.009,15.009,0,0,1,5.9,9.3a1,1,0,0,1,.145-1S7.652,6.282,7.679,6.256a1.1,1.1,0,0,0,0-1.549c-.031-.03-1.872-2.425-1.872-2.425a1.1,1.1,0,0,0-1.51.039l-1.15,1C-2.495,10.105,14.776,26.418,20.721,20.8l.911-1.05A1.121,1.121,0,0,0,21.717,18.193Z" />
                     </svg>
 
                 </a>
                 <a href="#footer"
-                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                    Nossas Lojas
+                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-gray-300 focus:ring-4 focus:ring-gray-100 dark:hover:bg-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    Nosso Endereço
                 </a>
             </div>
         </div>
@@ -84,26 +80,35 @@
     <section class="">
         <div class="flex justify-center gap-6 p-5">
             <div class="h-auto w-48">
-                <img class="rounded-lg" src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg" alt="">
+                <img class="rounded-lg"
+                    src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg"
+                    alt="">
             </div>
 
             <div class="h-auto w-48">
-                <img class="rounded-lg" src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg" alt="">
+                <img class="rounded-lg"
+                    src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg"
+                    alt="">
             </div>
 
             <div class="h-auto w-48">
-                <img class="rounded-lg" src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg" alt="">
+                <img class="rounded-lg"
+                    src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg"
+                    alt="">
             </div>
 
             <div class="h-auto w-48">
-                <img class="rounded-lg" src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg" alt="">
+                <img class="rounded-lg"
+                    src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg"
+                    alt="">
             </div>
         </div>
     </section>
 
+    <!-- Catalog -->
     <main id="catalogo" class="bg-white ">
 
-        <section class="p-5 dark:bg-gray-300 shadow-xl rounded-lg m-4">
+        <!-- <section class="p-5 dark:bg-gray-300 shadow-xl rounded-lg m-4">
 
             <div class="mb-5">
                 <h1
@@ -140,46 +145,57 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
         <div>
-            <hr class="w-48 h-1 mx-auto my-4 bg-gray-700 border-0 rounded md:my-10 ">
+            <hr class="w-48 h-1 mx-auto my-4 bg-blue-500 border-0 rounded md:my-10 dark:bg-gray-700">
         </div>
 
-        <section class="p-5 bg-gray-200 shadow-xl rounded-lg m-4">
+        <section class="p-5 border shadow-xl rounded-lg m-4 dark:bg-gray-200">
 
             <div class="mb-5">
                 <h1
-                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl">
-                    Bete Cunha Tapetes </h1>
-                <p class=" text-lg font-semibold text-gray-400 lg:text-xl">Peças de linhas Clássicas,
-                    desde raros tapetes persas passando pela tapeçaria indiana, e linhas Contemporâneas, com design
-                    personalizado, anti-alérgicos e sintéticos que se encaixam perfeitamente no que você procura para
-                    valorizar seu ambiente.</p>
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-blue-600 md:text-4xl lg:text-4xl dark:text-gray-900">
+                    Catalogo Do Seus Produtos
+                </h1>
+                <p class=" text-lg font-semibold text-gray-400 lg:text-xl">Você pode colocar as fotos do seus produto,
+                    que pode ser roupas, tecidos ou objetos. Seu Catalogo</p>
                 <hr class="h-px my-8 bg-gray-300 border-0">
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg" alt="">
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg"
+                            alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg" alt="">
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg"
+                            alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg" alt="">
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg"
+                            alt="">
                     </div>
                 </div>
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg" alt="">
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg"
+                            alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg" alt="">
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg"
+                            alt="">
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg" alt="">
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://user-images.githubusercontent.com/123313244/275681876-6a0c2fd3-f782-424f-b712-5d682699f7af.jpg"
+                            alt="">
                     </div>
                 </div>
 
@@ -187,124 +203,96 @@
 
         </section>
     </main>
+    <!-- /Catalog -->
 
     <div>
-        <hr class="w-48 h-1 mx-auto my-4 bg-gray-700 border-0 rounded md:my-10">
+        <hr class="w-48 h-1 mx-auto my-4 bg-blue-500 border-0 rounded md:my-10 dark:bg-gray-700">
     </div>
 
+    <!-- Contact -->
     <article id="vendedores" class="my-6">
         <section class="p-4">
             <div class="">
                 <h1
-                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl">
-                    Nossos Vendedores</h1>
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-blue-600 md:text-4xl lg:text-4xl dark:text-gray-900">
+                    Contatos dos Vendedores</h1>
 
                 <hr class="h-px my-8 bg-gray-300 border-0">
             </div>
-
-            <div class="flex gap-6">
-                <div
-                    class="w-full max-w-xs bg-gray-200 border border-gray-200 rounded-lg shadow-xl hover:bg-gray-300  ">
-                    <div class="flex flex-col items-center pb-10">
-                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://user-images.githubusercontent.com/123313244/275812697-66cdedca-f682-4b6d-a7be-a6fd27a9f9fd.png"
-                            alt="imagem vendedor" />
-                        <h5 class="mb-1 text-xl font-semibold text-gray-900 ">Nome</h5>
-                        <span class="text-sm font-semibold text-gray-600">Vendedor</span>
-                        <p class="text-sm font-semibold text-gray-500">Bete Cunha Interiores</p>
-                        <div class="flex mt-4 space-x-3 md:mt-6">
-                            <a href="#"
-                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                    <path
-                                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    class="w-full max-w-xs bg-gray-300 border border-gray-300 rounded-lg shadow-xl hover:bg-gray-400  ">
-                    <div class="flex flex-col items-center pb-10">
-                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://user-images.githubusercontent.com/123313244/275812697-66cdedca-f682-4b6d-a7be-a6fd27a9f9fd.png"
-                            alt="imagem vendedor" />
-                        <h5 class="mb-1 text-xl font-semibold text-white">Nome</h5>
-                        <span class="text-sm font-semibold text-gray-200">Vendedor</span>
-                        <p class="text-sm font-semibold text-gray-100 ">Bete Cunha Tapetes</p>
-                        <div class="flex mt-4 space-x-3 md:mt-6">
-                            <a href="#"
-                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                    <path
-                                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                                </svg>
-                            </a>
-                        </div>
+            <div class="w-full max-w-xs  border border-gray-100 rounded-lg shadow-xl hover:bg-gray-100 cursor-pointer dark:bg-gray-100">
+                <div class="flex flex-col items-center pb-10">
+                    <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                        src="https://user-images.githubusercontent.com/123313244/275812697-66cdedca-f682-4b6d-a7be-a6fd27a9f9fd.png"
+                        alt="imagem vendedor" />
+                    <h5 class="mb-1 text-xl font-semibold dark:text-gray-700">Nome</h5>
+                    <span class="text-sm font-semibold text-blue-600 dark:text-gray-600">Vendedor</span>
+                    <div class="flex mt-4 space-x-3 md:mt-6">
+                        <a href="#"
+                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
-
-
+            </div>
         </section>
     </article>
+    <!-- /Contact -->
 
-
-    <footer id="footer" class="bg-gray-900">
+    <!-- Footer -->
+    <footer id="footer" class="bg-blue-700 dark:bg-gray-900">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="#home" class="flex items-center">
-                        <img src="https://user-images.githubusercontent.com/123313244/275809062-7e30593d-8d63-4914-a7f0-076491403f35.png"
-                            class="h-14 mr-3" alt="FlowBite Logo" />
-                        <span class="self-center text-white text-2xl font-semibold whitespace-nowrap">Bete
-                            Cunha</span>
+                        <img src="https://user-images.githubusercontent.com/123313244/278417682-6fc6cfcb-b4f0-4596-8557-19d4063e1794.png" class="h-32 mr-3" alt="FlowBite Logo" />
+                        <span class="self-center text-white text-2xl font-semibold whitespace-nowrap">
+                            <!-- Sua loja -->
+                        </span>
                     </a>
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                    <div>
+                    <!-- <div>
                         <h2 class="mb-6 text-sm font-semibold text-white uppercase">Lojas</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <p class="hover:underline">Bete Cunhas Interiores</p>
-                            </li>
-                            <li>
-                                <p class="hover:underline">Bete Cunha Tapetes</p>
+                                <p class="hover:underline">Nome da sua loja</p>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
 
                     <div>
                         <h2 class="mb-6 text-sm font-semibold text-white uppercase ">Endereços</h2>
-                        <ul class="text-gray-400 font-medium">
+                        <ul class="text-white font-medium dark:text-gray-400">
                             <li class="mb-4">
-                                <p class="hover:underline ">R. Nunes Valente, 1329</p>
-                            </li>
-                            <li>
-                                <p class="hover:underline">R. Desembargador Leite Albuquerque, 240</p>
+                                <p class="hover:underline ">Endereço da sua Loja</p>
                             </li>
                         </ul>
                     </div>
 
                     <div>
                         <h2 class="mb-6 text-sm font-semibold text-white uppercase">Email</h2>
-                        <ul class="text-gray-400 font-medium">
+                        <ul class="text-white font-medium dark:text-gray-400">
                             <li class="mb-4">
-                                <p class="hover:underline">compras@betecunha.com.br</p>
+                                <p class="hover:underline">contato@sualoja.com.br</p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8" />
+            <hr class="my-6 border-white sm:mx-auto lg:my-8 dark:border-gray-700" />
+
             <div class="sm:flex sm:items-center sm:justify-between">
-                <span class="text-sm text-gray-400 sm:text-center ">© 2023 <a href="#"
-                        class="hover:underline">Desenvolvedor Web</a>
+                <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">Full
+                        DevSete</a>
                 </span>
                 <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
 
-                    <a href="#" class="text-gray-500 hover:text-white">
+                    <a href="#" class="text-white hover:text-white dark:text-gray-500">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-instagram" viewBox="0 0 16 16">
                             <path
@@ -313,7 +301,7 @@
                         <span class="sr-only">Instagram page</span>
                     </a>
 
-                    <a href="#" class="text-gray-500 hover:text-white">
+                    <a href="#" class="text-white hover:text-white dark:text-gray-500">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 8 19">
                             <path fill-rule="evenodd"
@@ -323,7 +311,7 @@
                         <span class="sr-only">Facebook page</span>
                     </a>
 
-                    <a href="#" class="text-gray-500 hover:text-white">
+                    <a href="#" class="text-white hover:text-white dark:text-gray-500">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 17">
                             <path fill-rule="evenodd"
@@ -337,6 +325,7 @@
             </div>
         </div>
     </footer>
+    <!-- /Footer -->
 
     <script src="https://w-caue.github.io/SiteBete/script.js"></script>
 </body>
